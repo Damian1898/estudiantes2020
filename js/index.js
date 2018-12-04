@@ -14,4 +14,4 @@ function includeHTML() {
 }
 
 // Call includes
-includeHTML();
+//includeHTML();

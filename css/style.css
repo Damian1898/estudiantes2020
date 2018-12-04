@@ -1,0 +1,99 @@
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    color: #FFF;
+}
+.ui-page {
+    background: transparent;
+}
+#main .ui-content{
+    background: transparent;
+    padding: 0;
+}
+
+.ui-content .general-score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-content .match {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+.ui-content .match-footer {
+    font-size: 12px;
+    background: rgba(255,255,255,0.5);
+    padding: 10px;
+    text-align: center;
+}
+.ui-content .match-footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.ui-content .match .match-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ui-content .general-score .team, .ui-content .general-score .goals {
+    color: #FFF;
+    flex-grow: 1;
+}
+
+.ui-content .general-score .team span {
+    vertical-align: super;
+    font-size: 12px;
+}
+
+.ui-content .general-score .team-local {
+    text-align: left;
+    flex-basis: 40%;
+}
+
+.ui-content .general-score .team-visitor {
+    text-align: right;
+    flex-basis: 40%;
+}
+
+.ui-content .general-score .goals {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.ui-content .general-score .score {
+    font-size: 24px;
+}
+
+.ui-content .general-score .team .team-squad {
+    width: 32px;
+    vertical-align: bottom;
+}
+
+.logo {
+    margin: 120px 0 50px 0;
+}
+
+.logo img {
+    display: block;
+    width: 50%;
+    max-width: 256px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ui-header .ui-title {
+    padding: 5px;
+}
+
+.ui-header .ui-header-img {
+    width: 32px;
+    vertical-align: middle;
+}
+
+#board-last-match, #board-last-match .ui-content, #main, #main .ui-content, #main .ui-content .content-main {
+    height: 100%;
+}

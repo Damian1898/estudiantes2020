@@ -5,23 +5,64 @@
 	<title>Estudiantes 2020</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-	<div data-role="page">
-		<div include-html="header.html"></div>
+	<div data-role="page" id="login">
 		<div data-role="content">
-			<a href="#page2" data-role="button">Page 2</a>
+			<div class='logo'>
+				<img src="img/logoE2020.png" alt="logo">
+			</div>
+			<a href="#main" data-transition="pop" data-role="button">Ingresar</a>
 		</div><!-- /content -->
 
 	</div><!-- /page -->
 
-	<div data-role="page" id="page2">
-		<div include-html="header.html"></div>
+	<div data-role="page" data-theme="b" id="main">
+		<div data-role="header" data-position="fixed">
+			<a href="javascript:;" data-icon="arrow-l" data-rel="back" data-role="button">Volver</a>
+			<h1><img class="ui-header-img" src="img/header.png" alt="logo"></h1>
+		</div>
+
 		<div data-role="content">
-			<a href="javascript:;" data-rel="back" data-role="button">Back</a>
+			<section class="content-main">
+				<div class="match">
+					<strong class="match-title">Partido anterior</strong>
+					<div class="general-score">
+						<div class='team team-local'>
+							<img src="img/equipos/663.png" class="team-squad" alt="Equipo Local">
+							<span>Estudiantes</span>
+						</div>
+						<div class="goals">
+							<strong class="score">3 - 3</strong>
+						</div>
+						<div class='team team-visitor'>
+							<span>Fenix</span>
+							<img src="img/equipos/690.png" class="team-squad" alt="Equipo Visitante">
+						</div>
+					</div>
+				</div>
+				<div class="match-footer">
+					<a href="#board-last-match" data-transition="pop">
+						Ver ficha del partido
+					</a>
+				</div>
+				<object width="100%" height="100%" data="http://estudiantes2020.com.ar/"></object>
+			</section>
 		</div><!-- /content -->
 
+
+	</div><!-- /page -->
+
+	<div data-role="page" data-theme="b" id="board-last-match">
+		<div data-role="header" data-position="fixed">
+			<a href="javascript:;" data-icon="arrow-l" data-rel="back" data-role="button">Volver</a>
+			<h1><img class="ui-header-img" src="img/header.png" alt="logo"></h1>
+		</div>
+		<div data-role="content">
+			<object width="100%" height="100%" data="http://estadisticas-deportes.tycsports.com/html/v3/index.html?channel=deportes.futbol.primerab.452421&lang=es_LA"></object>
+		</div>
 	</div><!-- /page -->
 </body>
 
